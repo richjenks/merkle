@@ -1,0 +1,25 @@
+{
+    "name": "richjenks/merkle",
+    "description": "Generate Merkle Trees following the same method used by Bitcoin",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rich Jenks",
+            "email": "rich@richjenks.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RichJenks\\Merkle\\": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.1@dev"
+    },
+    "scripts": {
+    	"test": "\"vendor/bin/phpunit\" --bootstrap vendor/autoload.php MerkleTest.php"
+    }
+}
