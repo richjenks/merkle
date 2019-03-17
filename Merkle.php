@@ -22,7 +22,7 @@ class Merkle
 	{
 		// Support single inputs
 		if (count($data) === 1) {
-			return self::hash($data[0]);
+			$data[1] = $data[0];
 		}
 
 		// Convert to binary and flip the endian-ness for each datum
